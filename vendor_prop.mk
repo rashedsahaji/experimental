@@ -353,6 +353,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.data_con_rprt=1
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=guaiyihu
+# Make data selection stick in dual SIM devices
+persist.radio.aosp_usr_pref_sel=true
+

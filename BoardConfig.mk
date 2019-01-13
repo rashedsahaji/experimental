@@ -62,18 +62,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
 TARGET_KERNEL_CONFIG := whyred-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-#TARGET_KERNEL_CLANG_VERSION := 7.0.2
-
-# Audio/Media/Display
-TARGET_QCOM_AUDIO_VARIANT := caf/msm8998
-TARGET_QCOM_MEDIA_VARIANT := caf/msm8998
-TARGET_QCOM_DISPLAY_VARIANT := caf/msm8998
-
-# Declare soong namespace
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
-    hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
-    hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
+TARGET_KERNEL_CLANG_VERSION := 8.0.6
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
